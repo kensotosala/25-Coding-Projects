@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-container {
+  width: 1065px;
+  height: 581px;
+  background-color: #15f5ba;
+  margin: 50px auto 0;
+  border-radius: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.display-password {
+  display: flex;
+  background-color: #f0f3ff;
+  width: 705px;
+  height: 68px;
+  border-radius: 38px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-container {
+  margin-left: 100px;
+}
+
+.btn-copy {
+  border: 0;
+}
+
+.btn-copy:hover {
+  background-color: #15f5ba;
+}
+
+.characters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.characters-used {
+  font-size: 28px;
+  font-weight: 600;
+}
+.characters-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.character-label {
+  margin-left: 5px;
+}
+
+.character-input {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
+
+.length-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #f0f3ff;
+  border-radius: 23px;
+  width: 705px;
+  height: 229px;
+}
+
+.length-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.length-section-item {
+  margin: 0 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.length-section-input {
+  width: 200px;
+  margin-bottom: 38px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: goldenrod;
+  border: 5px solid #333;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #836fff;
+  border-radius: 29px;
+}
+
+.btn-container {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-copy-psw {
+  margin-top: 20px;
+  width: 345px;
+  background-color: #836fff;
+  color: #15f5ba;
+  border-radius: 28px;
+  font-size: 28px;
+  font-weight: bold;
+}
