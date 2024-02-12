@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .main-title {
@@ -34,18 +35,27 @@
   border-radius: 38px;
   justify-content: space-around;
   align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.btn-container {
-  margin-left: 100px;
+.password-text {
+  width: 80%;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.btn-copy-container {
+  align-items: flex-end;
 }
 
 .btn-copy {
   border: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-copy:hover {
   background-color: #15f5ba;
+  border-radius: 10px;
 }
 
 .characters-section {
@@ -85,6 +95,7 @@
   border-radius: 23px;
   width: 705px;
   height: 229px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .length-container {
@@ -102,18 +113,21 @@
 
 .length-section-input {
   width: 200px;
-  margin-bottom: 38px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
+  margin-bottom: 25px;
   -webkit-appearance: none;
-  background: goldenrod;
-  border: 5px solid #333;
+  border-radius: 30px;
+  background: #836fff;
+  outline: none;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-  background-color: #836fff;
-  border-radius: 29px;
+.length-section-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #211951;
+  cursor: pointer;
 }
 
 .btn-container {
@@ -130,4 +144,10 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 28px;
   font-size: 28px;
   font-weight: bold;
+  border: none;
+}
+
+.btn-copy-psw:hover {
+  background-color: #15f5ba;
+  color: #836fff;
 }

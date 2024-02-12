@@ -28,11 +28,11 @@
         <h1 class="main-title">Random Password Generator</h1>
         <div class="display-password">
           <div class="password-text">
-            <h2>q-Oq:N72zs#|WO:iSMsue6/)</h2>
+            <h2 id="displayPassword">q-Oq:N72zs#|WO:iSMsue6/)</h2>
           </div>
-          <div class="btn-container">
+          <div class="btn-copy-container">
             <button type="submit" class="btn-copy">
-              <img src="assets/copy.svg" alt="copy icon" />
+              <img src="assets/copy.svg" alt="copy icon" onclick="copyText()" />
             </button>
           </div>
         </div>
@@ -61,14 +61,24 @@
               <p class="length-title">Password Length</p>
             </div>
             <div class="length-section-item">
-              <p class="length-value">16</p>
+              <p class="length-value">12</p>
             </div>
             <div class="length-section-item">
-              <input type="range" class="length-section-input" />
+              <input
+                type="range"
+                class="length-section-input"
+                id="range-input"
+                min="0"
+                max="27"
+                value="12"
+                oninput="updateValue()"
+              />
             </div>
           </div>
           <div class="btn-container">
-            <button class="btn-copy-psw">Copy Password</button>
+            <button class="btn-copy-psw" onclick="copyText()">
+              Copy Password
+            </button>
           </div>
         </div>
       </div>
