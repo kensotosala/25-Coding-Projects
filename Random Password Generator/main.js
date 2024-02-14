@@ -9,36 +9,61 @@ const copyText = () => {
   navigator.clipboard.writeText(passwordText.textContent);
 };
 
+// => Checkboxes
+const cbUpperCase = document.getElementById("cb-uppercase");
+const cbLowerCase = document.getElementById("cb-lowercase");
+const cbNumbers = document.getElementById("cb-numbers");
+const cbSymbols = document.getElementById("cb-symbols");
+
+// ==> Functions
+
 function displayPassword() {
   const password = document.getElementById("displayPassword");
   password.textContent = generatePassword();
 }
 
-// ==> Functions
-const updateValue = () => {
+function updateValue() {
   sliderValue.textContent = rangeInput.value;
   displayPassword();
-};
+}
 
 function generatePassword() {
   let strPsw = "";
-  let ABC = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-  let abc = "abcdefghijklmnñopqrstuvwxyz";
+  let abc = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
   let numbers = "0123456789";
-  let symbols = "'!°|#$%&/()=?¡¿-.,;:_[*]{+}´¨";
+  let symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
-  let passwordLength = rangeInput.value / 4;
+  let charset = "";
+
+  if (cbUpperCase.checked) {
+    charset += abc;
+  } else if (cbLowerCase.checked) {
+    charset += abc.toLowerCase();
+  } else if (cbNumbers.checked) {
+    charset += numbers;
+  } else if (cbSymbols.checked) {
+    charset += symbols;
+  } else {
+    charset = abc + numbers + symbols + abc.toLowerCase();
+    cbUpperCase.checked = true;
+    cbNumbers.checked = true;
+    cbSymbols.checked = true;
+    cbLowerCase.checked = true;
+  }
+
+  let passwordLength = rangeInput.value;
+
+  // for (let i = 0; i < passwordLength; i++) {
+  //   if (cbUpperCase.checked) strPsw += getRandomChar(ABC);
+  //   if (cbLowerCase.checked) strPsw += getRandomChar(ABC.toLowerCase());
+  //   if (cbNumbers.checked) strPsw += getRandomChar(numbers);
+  //   if (cbSymbols.checked) strPsw += getRandomChar(symbols);
+  // }
 
   for (let i = 0; i < passwordLength; i++) {
-    strPsw += getRandomChar(ABC);
-    strPsw += getRandomChar(abc);
-    strPsw += getRandomChar(numbers);
-    strPsw += getRandomChar(symbols);
+    const randomIndex = Math.floor(Math.random() * charset.length);
+    strPsw += charset[randomIndex];
   }
 
   return strPsw;
-}
-
-function getRandomChar(charset) {
-  return charset.charAt(Math.floor(Math.random() * charset.length));
 }

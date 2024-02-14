@@ -39,19 +39,43 @@
         <div class="characters-section">
           <div class="characters-used">Characters used:</div>
           <div class="characters-item">
-            <input type="checkbox" class="character-input" />
+            <input
+              type="checkbox"
+              class="character-input"
+              id="cb-uppercase"
+              checked
+              oninput="updateValue()"
+            />
             <label class="character-label">ABC</label>
           </div>
           <div class="characters-item">
-            <input type="checkbox" class="character-input" />
+            <input
+              type="checkbox"
+              class="character-input"
+              id="cb-lowercase"
+              checked
+              oninput="updateValue()"
+            />
             <label class="character-label">abc</label>
           </div>
           <div class="characters-item">
-            <input type="checkbox" class="character-input" />
+            <input
+              type="checkbox"
+              class="character-input"
+              id="cb-numbers"
+              checked
+              oninput="updateValue()"
+            />
             <label class="character-label">123</label>
           </div>
           <div class="characters-item">
-            <input type="checkbox" class="character-input" />
+            <input
+              type="checkbox"
+              class="character-input"
+              id="cb-symbols"
+              checked
+              oninput="updateValue()"
+            />
             <label class="character-label">=%/</label>
           </div>
         </div>
@@ -68,7 +92,7 @@
                 type="range"
                 class="length-section-input"
                 id="range-input"
-                min="0"
+                min="8"
                 max="27"
                 value="12"
                 oninput="updateValue()"
