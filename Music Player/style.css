@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kreon", Courier, monospace;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-files-container {
+  width: 735px;
+  height: 652px;
+  background-color: #ff9843;
+  text-align: center;
+  margin-top: 100px;
+  border-radius: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  margin-top: 25px;
+  color: #3468c0;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.h2-title {
+  color: #ffdd;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.drag-drop-container {
+  margin-top: 20px;
+  width: 525px;
+  height: 409px;
+  background: #ffdd95;
+  border-radius: 26px;
+}
+
+.imgCloud {
+  margin-top: 20px;
+}
+
+.txtDragDrop {
+  font-size: 28px;
+  font-weight: 600;
+  color: #b784b7;
+}
+
+.txtOr {
+  font-size: 28px;
+  font-weight: bold;
+  color: #b784b7;
+  margin: 20px 0px;
+}
+
+.btnBrowseFiles {
+  background-color: #e493b3;
+  border: none;
+  width: 195px;
+  height: 62px;
+  border-radius: 25px;
+  font-size: 28px;
+  color: #8e7ab5;
+  font-weight: 600px;
+}
