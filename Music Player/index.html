@@ -17,9 +17,42 @@
           <img src="./assets/cloud.png" alt="cloud" class="imgCloud" />
           <p class="txtDragDrop">Drag & Drop your file here</p>
           <p class="txtOr">OR</p>
-          <button class="btnBrowseFiles" type="submit">Browse Files</button>
+          <button class="btnBrowseFiles" id="btnBrowseFiles" type="submit">
+            Browse Files
+          </button>
         </div>
       </div>
     </section>
+    <section class="modal-section">
+      <div class="modal-container" id="modal_container">
+        <div class="modal">
+          <div class="btnClose-container">
+            <span onclick="closeModal()" class="btnClose">❌</span>
+          </div>
+          <div class="modal-content">
+            <div class="img-container">
+              <img src="./assets/cover.jpg" alt="cover" id="songCover" />
+            </div>
+            <h1 class="song-title">Where Are You Now</h1>
+            <p class="author-title">Justin Bieber</p>
+          </div>
+          <div class="timeline">
+            <input type="range" class="slider" />
+          </div>
+          <div class="controls">
+            <div class="go-back">
+              <img src="./assets/go-back.png" alt="" />
+            </div>
+            <div class="play">
+              <img src="./assets/play.png" alt="" />
+            </div>
+            <div class="go-forward">
+              <img src="./assets/go-forward.svg" alt="" class="btnPlay" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>
