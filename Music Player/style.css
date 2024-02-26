@@ -204,6 +204,6 @@ svg path {
   fill: #333;
 }
 
-.go-forward:hover .btnPlay {
-  fill: #f00;
+.go-forward-btn:hover {
+  color: #f00;
 }

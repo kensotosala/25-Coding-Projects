@@ -1,6 +1,14 @@
 const jsmediatags = window.jsmediatags;
 const inputFile = document.getElementById("inputFile");
 const modalSection = document.querySelector(".modal-section");
+const btnPlay = document.getElementById("play-sound");
+const btnForward = document.getElementById("btnForward");
+const btnBackward = document.getElementById("btnBackward");
+
+// Variables
+let audioFile;
+const audio = new Audio();
+let isPlaying = false;
 
 async function openModal() {
   modalSection.style.display = "block";
@@ -8,15 +16,13 @@ async function openModal() {
 
 function closeModal() {
   modalSection.style.display = "none";
+  stopAudio();
 }
-
-const options = {
-  accept: "image/*",
-};
 
 async function selectFile(e) {
   let [fileHandle] = await window.showOpenFilePicker();
   const file = await fileHandle.getFile();
+  audioFile = file;
   jsmediatags.read(file, {
     onSuccess: function (tag) {
       console.log(tag);
@@ -40,11 +46,44 @@ async function selectFile(e) {
     },
   });
 
+  audio.src = URL.createObjectURL(audioFile);
+
   setTimeout(() => {
     openModal();
   }, 1500);
+
+  return file;
 }
 
 inputFile.addEventListener("click", (e) => {
   selectFile(e);
+});
+
+function stopAudio() {
+  audio.pause();
+  audio.currentTime = 0;
+}
+
+btnPlay.addEventListener("click", () => {
+  if (isPlaying) {
+    btnPlay.src = "/assets/play.svg";
+    isPlaying = false;
+    audio.pause();
+  } else {
+    btnPlay.src = "/assets/pause.svg";
+    isPlaying = true;
+    audio.play();
+  }
+});
+
+btnForward.addEventListener("click", () => {
+  if (!isNaN(audio.duration)) {
+    audio.currentTime += 5;
+  }
+});
+
+btnBackward.addEventListener("click", () => {
+  if (!isNaN(audio.duration)) {
+    audio.currentTime -= 5;
+  }
 });
