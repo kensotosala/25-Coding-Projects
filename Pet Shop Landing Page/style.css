@@ -66,8 +66,7 @@
 
 .container-division {
   background: #e9dac1;
-  height: 107px;
-  width: 100%;
+  height: auto;
 }
 
 .service-section-title {
@@ -92,4 +91,32 @@
 
 .service-text {
   color: #54bab9;
+}
+
+.why-section {
+  background: #fbf8f1;
+}
+
+.why-main-title {
+  font-size: 34px;
+  color: #54bab9;
+  font-weight: bold;
+}
+
+.why-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.why-description {
+  font-size: 20px;
+}
+
+.card {
+  background: #fbf8f1;
+  border: none;
+}
+
+.sctCustomers {
+  background: #54bab9;
 }
