@@ -11,7 +11,7 @@
   background: #54bab9;
 }
 
-.nav-link {
+.navItem {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
@@ -119,4 +119,83 @@
 
 .sctCustomers {
   background: #54bab9;
+}
+
+.csTitleSection {
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.txtTestimony {
+  color: #fff;
+}
+
+.txtCustomer {
+  color: #cccccc;
+}
+
+.btnDate {
+  color: #fbf8f1;
+  background: #54bab9;
+  border: none;
+}
+
+.btnDate:hover {
+  color: #54bab9;
+  background: #fbf8f1;
+  font-weight: bold;
+  border: 1px solid #54bab9;
+}
+
+.wrapCTA {
+  background: #e9dac1;
+}
+
+.titleCTA {
+  font-size: 34px;
+  font-weight: bold;
+  color: #54bab9;
+}
+
+.txtCTA {
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btnCTA {
+  color: #f7ecde;
+  background: #54bab9;
+  border: none;
+}
+
+.btnCTA:hover {
+  background: #f7ecde;
+  color: #54bab9;
+  border: 1px solid #54bab9;
+  font-weight: bold;
+}
+
+.footer {
+  background: #404242;
+  color: #fff;
+}
+
+.btnNewsLetter {
+  color: #54bab9;
+  background: #f7ecde;
+  border: none;
+}
+
+.btnNewsLetter:hover {
+  color: #f7ecde;
+  background: #54bab9;
+  font-weight: bold;
+}
+
+.btnNewsLetter:hover:active {
+  color: #f7ecde;
+  background: #54bab9;
+  font-weight: bold;
 }

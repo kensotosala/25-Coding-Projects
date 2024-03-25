@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <title>VetShop</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -44,13 +41,13 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link navItem" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ubicación</a>
+                <a class="nav-link navItem" href="#">Ubicación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link navItem" href="#">Servicios</a>
               </li>
               <li class="nav-item ms-md-4">
                 <div class="d-grid">
@@ -66,7 +63,7 @@
     </header>
     <main>
       <!-- Hero Section -->
-      <div class="container container-fluid mt-4 px-md-0 px-lg-5s">
+      <div class="container container-fluid mt-4 px-md-0 px-lg-5">
         <div class="row align-items-center px-lg-5s">
           <div class="col-md-6 mb-4 mb-md-0">
             <h1 class="main-title">
@@ -95,45 +92,45 @@
         </div>
       </div>
       <!-- Division -->
-      <div class="container-fluid container-division mt-5">
+      <div class="container-fluid container-division mt-5 py-3">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-auto mx-auto">
+            <div class="col-2">
               <img
                 src="./assets/animals/Dog.svg"
                 class="img-fluid rounded-top"
                 alt=""
               />
             </div>
-            <div class="col-auto mx-auto">
+            <div class="col-2">
               <img
                 src="./assets/animals/Rabit.svg"
                 class="img-fluid rounded-top"
                 alt=""
               />
             </div>
-            <div class="col-auto mx-auto">
+            <div class="col-2">
               <img
                 src="./assets/animals/Bird.svg"
                 class="img-fluid rounded-top"
                 alt=""
               />
             </div>
-            <div class="col-auto mx-auto">
+            <div class="col-2">
               <img
                 src="./assets/animals/Fish.svg"
                 class="img-fluid rounded-top"
                 alt=""
               />
             </div>
-            <div class="col-auto mx-auto mb-3">
+            <div class="col-2">
               <img
                 src="./assets/animals/Horse.svg"
                 class="img-fluid rounded-top"
                 alt=""
               />
             </div>
-            <div class="col-auto mx-auto mb-3">
+            <div class="col-2">
               <img
                 src="./assets/animals/Cat.svg"
                 class="img-fluid rounded-top"
@@ -219,25 +216,25 @@
           </div>
         </div>
       </div>
-      <!-- Why's? -->
 
-      <div class="container why-section px-lg-5">
+      <!-- Why's? -->
+      <section class="container why-section px-lg-5">
         <div class="row">
-          <div class="col mt-lg-4 mx-auto">
+          <div class="col-md-6 mt-lg-4 mx-auto">
             <img
               src="/assets/bigDog.png"
-              class="img-fluid rounded-top mx-auto"
-              alt=""
+              class="img-fluid rounded-top mx-auto d-block"
+              alt="Imagen de un perro grande"
             />
           </div>
-          <div class="col mt-lg-4 mx-auto">
+          <div class="col-md-6 mt-lg-4 mx-auto">
             <div class="row">
-              <div class="col text-center why-main-title">
-                <h2>¿Por qué elegirnos?</h2>
+              <div class="col text-center">
+                <h2 class="why-main-title mt-3">¿Por qué elegirnos?</h2>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-md-12">
                 <div class="card mx-lg-4 mt-lg-4">
                   <div class="card-body">
                     <h5 class="card-title why-title">Amor por los animales</h5>
@@ -249,9 +246,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
+              <div class="col-md-12">
                 <div class="card mt-3 mx-lg-4">
                   <div class="card-body">
                     <h5 class="card-title why-title">
@@ -265,9 +260,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
+              <div class="col-md-12">
                 <div class="card mt-3 mx-lg-4">
                   <div class="card-body">
                     <h5 class="card-title why-title">
@@ -285,48 +278,103 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Customers Section -->
-      <section class="container sctCustomers px-5">
-        <h2 class="text-center mt-5 mb-5">¿Qué dicen nuestros clientes?</h2>
+      <section class="container px-lg-5 sctCustomers">
         <div class="row">
-          <div class="col">
-            <img src="/assets/imgCustomer.png" class="img-fluid" alt="" />
+          <div class="col-12 text-center mt-4">
+            <h2 class="csTitleSection">¿Qué dicen nuestros clientes?</h2>
           </div>
-          <div class="col">
-            <p>
-              Desde que adopté a Luna, mi gatita, estaba buscando una
-              veterinaria de confianza. Encontré VetShop y no puedo estar más
-              feliz. Los veterinarios son muy amables y profesionales, explican
-              todo con claridad y Luna siempre se siente tranquila durante las
-              consultas. ¡Súper recomendada!
-            </p>
+        </div>
+        <div class="row mt-lg-5">
+          <div class="col-md-6 text-center">
+            <img
+              src="/assets/imgCustomer.png"
+              class="img-fluid mb-3"
+              alt="Imagen de cliente"
+            />
+          </div>
+          <div class="col-md-6">
             <div class="row">
-              <p class="card-text">Ana S. dueña de Luna</p>
+              <blockquote class="blockquote">
+                <p class="txtTestimony">
+                  Desde que adopté a Luna, mi gatita, estaba buscando una
+                  veterinaria de confianza. Encontré VetShop y no puedo estar
+                  más feliz. Los veterinarios son muy amables y profesionales,
+                  explican todo con claridad y Luna siempre se siente tranquila
+                  durante las consultas. ¡Súper recomendada!
+                </p>
+                <footer class="blockquote-footer txtCustomer">
+                  Ana S. dueña de Luna
+                </footer>
+              </blockquote>
             </div>
-            <div class="row mt-5 text-end">
-              <div class="col text-end">
+            <div class="row justify-content-center mb-4 mt-lg-5">
+              <div class="col-auto">
                 <img
                   src="/assets/Back Button.png"
                   class="img-fluid rounded-top"
-                  alt=""
+                  alt="Botón de retroceso"
                 />
               </div>
-              <div class="col text-end">
+              <div class="col-auto">
                 <img
                   src="/assets/Go Button.png"
                   class="img-fluid rounded-top"
-                  alt=""
+                  alt="Botón de avance"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Call to Action -->
+      <section class="container py-5 wrapCTA">
+        <div class="text-center">
+          <h2 class="mb-3 titleCTA">¿Qué esperas?</h2>
+          <h2 class="mb-4 txtCTA">Agenda tu cita hoy mismo</h2>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-primary btn-lg btnCTA">
+              Agendá Tu Cita
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <!-- place footer here -->
+    <!--Footer-->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-3">
+            <img src="/assets/Logo.svg" class="" alt="Logo" />
+          </div>
+          <div class="col alert-dismissible">
+            <h5>Compañía</h5>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Socios</a>
+              </li>
+              <li><a href="#" class="nav-link">Términos de uso</a></li>
+              <li><a href="#" class="nav-link">Privacidad</a></li>
+              <li><a href="#" class="nav-link">Clientes</a></li>
+            </ul>
+          </div>
+          <div class="col mb-3 text-center">
+            <h5>Ponte en contacto</h5>
+            <p class="">No te pierdas ninguna de nuestras promociones</p>
+            <div class="form-group">
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group mt-2 text-center">
+              <a name="" id="" class="btn btnNewsLetter" href="#" role="button"
+                >---></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
