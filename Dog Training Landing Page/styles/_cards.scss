@@ -1,12 +1,30 @@
 @import "_colors";
 
-.cardObedience {
-  border: 1px solid #000;
+.cardServiceV1 {
+  border: 1px solid $dark;
+  border-radius: 30px;
+  background: $green;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 1) 0px -3px 0px inset;
+}
+
+.cardServiceV2 {
+  border: 1px solid $dark;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 1) 0px -3px 0px inset;
+  background: $red;
   border-radius: 30px;
 }
 
+.cardTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .btnMoreInfo {
-  border: 1px solid #000;
+  border: 1px solid $dark;
   font-size: 20.8px;
   background: #c6ebc5;
 }
