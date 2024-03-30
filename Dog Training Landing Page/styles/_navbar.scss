@@ -1,0 +1,19 @@
+@import "_colors";
+
+nav {
+  background: #d9d9d9;
+
+  .nav-link {
+    font-weight: bold;
+    color: $green;
+    font-size: 28.8px;
+  }
+
+  .btnContact {
+    background: #fefded;
+    border: 1px solid #000;
+    font-size: 20.8px;
+    color: $green;
+    font-weight: bold;
+  }
+}
