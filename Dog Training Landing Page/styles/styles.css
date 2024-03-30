@@ -64,6 +64,24 @@ nav .btnContact {
   background: #c6ebc5;
 }
 
+.containerCTA {
+  background: #c6ebc5;
+  border-radius: 47px;
+}
+.containerCTA .ctaTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.containerCTA .ctaText {
+  font-size: 16px;
+}
+.containerCTA .btnCTA {
+  background: #FA7070;
+  border: 1px solid #222121;
+  border-radius: 15px;
+  font-size: 20.8px;
+}
+
 body {
   background: #fefded;
   font-family: "Space Mono", Courier, monospace;
