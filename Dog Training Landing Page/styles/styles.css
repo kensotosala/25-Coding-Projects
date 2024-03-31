@@ -82,6 +82,16 @@ nav .btnContact {
   font-size: 20.8px;
 }
 
+footer {
+  background: #A1C398;
+}
+footer .divider {
+  border: 1px solid #222121;
+}
+footer .txtCopyRight {
+  font-weight: bold;
+}
+
 body {
   background: #fefded;
   font-family: "Space Mono", Courier, monospace;

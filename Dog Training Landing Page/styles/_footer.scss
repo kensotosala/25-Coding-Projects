@@ -1,0 +1,11 @@
+@import "_colors";
+
+footer {
+  background: $green;
+  .divider {
+    border: 1px solid $dark;
+  }
+  .txtCopyRight {
+    font-weight: bold;
+  }
+}
